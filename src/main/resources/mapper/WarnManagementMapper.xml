@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jxl.LogSystem.mapper.WarnManagementMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.jxl.LogSystem.model.WarnManagement">
+        <id column="warn_management_id" property="warnManagementId" />
+        <result column="title" property="title" />
+        <result column="appID" property="appID" />
+        <result column="info_count" property="infoCount" />
+        <result column="error_count" property="errorCount" />
+        <result column="warn_count" property="warnCount" />
+        <result column="critical_count" property="criticalCount" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+</mapper>

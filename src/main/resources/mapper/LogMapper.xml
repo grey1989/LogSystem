@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.jxl.LogSystem.mapper.LogMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="org.jxl.LogSystem.model.Log">
+        <id column="logID" property="logID" />
+        <result column="appID" property="appID" />
+        <result column="content" property="content" />
+        <result column="level" property="level" />
+        <result column="app_env" property="appEnv" />
+        <result column="server_ip" property="serverIp" />
+        <result column="err_class" property="errClass" />
+        <result column="requestID" property="requestID" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+</mapper>
